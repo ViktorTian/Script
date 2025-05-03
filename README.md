@@ -40,7 +40,9 @@ You should see this at the end of extract.log:
 解压完成！
 
 Or verify manually:
+
 ls -d train/*/ | wc -l  # Should output 1000
+
 ls -d val/*/ | wc -l    # Should output 1000
 
 Script Features
