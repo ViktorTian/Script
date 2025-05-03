@@ -38,8 +38,8 @@ You should see this at the end of extract.log:
 
 整理 val 图片到各类别目录（官方脚本）...
 解压完成！
-Or verify manually:
 
+Or verify manually:
 ls -d train/*/ | wc -l  # Should output 1000
 ls -d val/*/ | wc -l    # Should output 1000
 
