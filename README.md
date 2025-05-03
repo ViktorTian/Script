@@ -1,4 +1,4 @@
-# ImageNet ILSVRC2012 Extraction Script (with Resume Support)
+# ImageNet ILSVRC2012 Extraction Script
 
 This script extracts the ILSVRC2012 ImageNet training and validation sets, with **resume capability** (skips already extracted categories).  
 It automatically organizes images into class folders compatible with standard ImageNet training pipelines.
