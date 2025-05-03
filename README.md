@@ -9,6 +9,7 @@ It automatically organizes images into class folders compatible with standard Im
 ### Upload the script to your server or Kubernetes Pod
 
 Place the script `extract_ILSVRC_clean.sh` into the directory containing:
+
 - `ILSVRC2012_img_train.tar`
 - `ILSVRC2012_img_val.tar`
 
@@ -21,6 +22,7 @@ If you edited or downloaded the script on Windows, convert it to Unix line endin
 apt-get update
 apt-get install -y dos2unix
 dos2unix extract_ILSVRC_clean.sh
+
 Why: Windows uses CRLF line endings which will cause errors ($\r command not found) in Linux shells.
 
 ### Make the script executable
@@ -30,6 +32,7 @@ chmod +x extract_ILSVRC_clean.sh
 To prevent interruptions if you disconnect, run it in the background:
 
 nohup bash extract_ILSVRC_clean.sh > extract.log 2>&1 &
+
 Monitor progress:
 
 tail -f extract.log
@@ -57,4 +60,5 @@ The script does not delete the original tar files after extraction to allow resu
 For disk space saving, consider manually deleting tar files after successful extraction.
 
 rm ILSVRC2012_img_train.tar
+
 rm ILSVRC2012_img_val.tar
